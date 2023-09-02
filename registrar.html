@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="registro.css">
 </head>
 <body>
@@ -11,20 +12,24 @@
     <br />
     <br />
     <div class="card">
-      <label for="email">Email:</label>
-      <input id="email" name="EMAIL" type="email" value="">
-      <label for="pass">contraseña</label>
-      <input id="pass" name="pass" type="pass" value="">
-      <label for="pass">Repetir contraseña</label>
-      <input id="pass" name="pass" type="pass" value="">
+      <!-- <label for="email">Email:</label>
+      <input id="email" name="EMAIL" type="email" value=""> -->
       <label for="pass">Usuario</label>
-      <input id="pass" name="pass" type="pass" value="">
-      <input type="button" class="btn" value="Enviar">
+      <input id="usuario-ingresado" name="pass" type="text" value="" placeholder="Ingresar nombre">
+      <label for="pass">contraseña</label>
+      <input id="contrasenia-ingresada" name="pass" type="pass" value="" placeholder="Ingresa tu contraseña">
+      <label for="pass">Confirmar contraseña</label>
+      <input id="confirmar-contrasenia" name="pass" type="pass" value="" placeholder="Confirma tu contraseña">
+      
+      <!-- <input onclick="registrarCuenta()" href="index.html" type="button" class="btn" value="Enviar"> -->
     </div>
   </div>
-  <div class = "button">
-    <a href="index.html">Registrar</a>
-  </div>
-  
+  <div class="button" style="text-align: center;">
+    <a onclick="registrarCuenta()" class="btn btn-primary" href="index.html" role="button">Enviar</a>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="registrar.js"></script>
 </body>
 </html>
