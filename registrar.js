@@ -8,6 +8,7 @@ const CLAVE_CONTRASENIAS = "lista-contrasenias";
 function registrarCuenta() {
     let contraseniaUno = inputContraseniaIngresada.value;
     let contraseniaDos = inputConfirmaContrasenia.value;
+    
     if (contraseniaUno === contraseniaDos) {
         document.querySelector("a").href = "./index.html";
        
